@@ -77,16 +77,3 @@ WinMove, x, y
 Sleep, 10
 }
 Return
-
-PgUp::
-MsgBox, 4, SystemWarning, Your Computer Has Been Infected Go To The Windows Antivirus Website to Fix It
-IfMsgBox, No
-    return
-IfMsgBox, Yes
-    Run, chrome.exe
-    Sleep, 500
-    Send, antiviruslink.com/windows10
-    Send, {Enter down}
-    Sleep, 10
-    Send, {Enter up}
-return
